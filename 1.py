@@ -1,4 +1,8 @@
-num_list = [5,7,3,2,0]
+from random import randint
+
+num_list = []
+for i in range(5):
+    num_list.append(randint(0, 100))
 user_num = int(input("Введите число: "))
 for i in range(len(num_list)):
     if num_list[i] == user_num:
